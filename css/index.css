@@ -1,0 +1,46 @@
+body{
+    background-color: bisque;
+    color: #1f1001;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section{
+    margin-top: 25px; 
+    margin-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px; 
+}
+
+.links{
+    text-align: left;
+}
+
+a{
+    font-style: italic;
+}
+
+h2{
+    font-size: 32px;
+    font-weight: bold;
+    color: darkred;
+}
+
+.main-header{
+    background-color:#1f1001;
+    color: bisque;
+    padding: 25px 50px;
+    text-align: center;
+}
+
+img{
+    align-items: center;
+}
+
+ul {
+    display: block;
+    style{
+        background-color: lightgray;
+        color: black;
+        text-align: center;
+    }
+}
