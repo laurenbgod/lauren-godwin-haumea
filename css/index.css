@@ -63,8 +63,37 @@ ul {
 }
 
 #nav-flex{
-    display:flex;
-    flex-direction:column;
-    flex-wrap:wrap;
-    justify-content:space-between;
+    display: grid;
+    overflow: auto;
+    gap: 1px;
+    padding: 1px;
+    border: .5px solid #1f1001;
+    background-color: bisque;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+/* Mobile Phone */
+
+@media screen and (max-width:500px){
+    h2{
+        font-size: 18;
+        font-weight: normal;
+    }
+
+    .main-header{
+        padding: 10px 20px;
+        text-align: left;
+    }
+
+    img{
+        object-fit: contain;
+    }
+
+    ul{
+        max-width: 75%;
+        background-color: dimgray;
+    }
 }
