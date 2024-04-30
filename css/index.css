@@ -63,10 +63,10 @@ ul {
 }
 
 #nav-flex{
-    display: grid;
-    overflow: auto;
-    gap: 1px;
-    padding: 1px;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:space-between;
     border: .5px solid #1f1001;
     background-color: bisque;
     grid-template-rows: repeat(2, 1fr);
@@ -79,7 +79,7 @@ ul {
 
 @media screen and (max-width:500px){
     h2{
-        font-size: 18;
+        font-size: 18px;
         font-weight: normal;
     }
 
@@ -95,5 +95,29 @@ ul {
     ul{
         max-width: 75%;
         background-color: dimgray;
+    }
+}
+
+
+/* Medium Size Screen */
+
+@media screen and (min-width:1280px){
+    h2{
+        font-size: 32px;
+        font-weight: normal;
+    }
+
+    .main-header{
+        padding: 25px 50px;
+        text-align: left;
+    }
+
+    img{
+        object-fit: contain;
+    }
+
+    ul{
+        max-width: 60%;
+        background-color: plum;
     }
 }
