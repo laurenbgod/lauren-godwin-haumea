@@ -9,7 +9,7 @@ const today = new Date();
 const thisYear = today.getFullYear();
 //// place in footer
 const footer = document.querySelector("footer");
-const copyright = footer.createElement("p");
+const copyright = document.createElement("p");
 copyright.innerHTML = `<p> Lauren Godwin ${thisYear} </p>`;
 footer.appendChild(copyright);
 
