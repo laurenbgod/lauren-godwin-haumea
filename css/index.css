@@ -25,7 +25,7 @@ h2{
     color: darkred;
 }
 
-.main-header{
+.header{
     background-color:#1f1001;
     color: bisque;
     padding: 25px 50px;
@@ -33,6 +33,7 @@ h2{
 }
 
 img{
+    padding: 1px 175px;
     align-items: center;
 }
 
@@ -64,13 +65,12 @@ ul {
 
 #nav-flex{
     display:flex;
-    flex-direction:row;
+    flex-direction: row;
     flex-wrap:wrap;
     justify-content:space-between;
     border: .5px solid #1f1001;
     background-color: bisque;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 
