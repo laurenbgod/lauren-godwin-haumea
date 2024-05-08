@@ -56,3 +56,31 @@ messageList.appendChild(newMessage);
 
     messageForm.reset();
 })
+
+const projectsSection = document.querySelector("#projects");
+const projectsList = projectsSection.querySelector("ul");
+const repositories = json.parse;
+
+fetch('https://api.github.com/users/laurenbgod/repos')
+    .then((res) => {
+        if (!res.ok) {
+        throw new Error("Something went wrong 😢");
+        }
+        return res.json();
+    })
+ 
+    .then((repositories) => {
+        console.log(repositories);
+        for (let i = 0; i < repositories.length; i++) {
+            const project = document.createElement("li");
+            project.innerText = repositories[i].name;
+            projectsList.appendChild(project);
+          }
+        })
+    .catch((error) => {
+        const errorElement = document.createElement("p");
+        errorElement.innerText = error.message;
+        projectsSection.appendChild(errorElement);
+  });
+
+    
