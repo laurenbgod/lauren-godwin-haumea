@@ -1,85 +1,94 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My First Webpage </title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Lauren Godwin">
-        <link rel="stylesheet" href="css/index.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
+  <head>
+    <title>My First Webpage</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Lauren Godwin" />
+    <link rel="stylesheet" href="css/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
 
-  
-
-    <body>
-        <nav class = "header" id = "navigation">
-            <div class="nav-flex"> Main Menu </div>
-            <div><a href="#name"> Introduction </a></div>
-            <div><a href="#about-me">About Me</a></div>
-            <div><a href="#work-experience"> Experience Section </a></div>
-            <div><a href="#my-skills"> Skills Section </a></div>
-            <div><a href="#recent-projects"> Projects </a></div>
-            <div><a href="#contact-information"> Contact Me </a></div>
+  <body>
+    <nav id="navigation">
+      <div class="header">Main Menu</div>
+      <div class="nav-flex">
+        <a href="#name"> Introduction </a>
+        <a href="#about-me">About Me</a>
+        <a href="#work-experience"> Experience Section </a>
+        <a href="#my-skills"> Skills Section </a>
+        <a href="#recent-projects"> Projects </a>
+        <a href="#contact-information"> Contact Me </a>
+      </div>
     </nav>
 
-        <section id ="name">
-         <h1 class="header"> Lauren B Godwin </h1>
-         <img src= "images/casual-headshot.png" alt="casual image of Lauren Godwin">
-        </section>
+    <section id="name">
+      <h1 class="header">Lauren B Godwin</h1>
+      <img
+        src="images/casual-headshot.png"
+        alt="casual image of Lauren Godwin"
+      />
+    </section>
 
-        <section id="about-me">
-            <h2>About</h2> 
-              <p> I am a 24-year-old woman from Detroit, Michigan. I am very interested in the past, present, and future of media and want to study its impact on our personalities and everyday interactions.</p>
-        </section>
+    <section id="about-me">
+      <h2>About</h2>
+      <p>
+        I am a 24-year-old woman from Detroit, Michigan. I am very interested in
+        the past, present, and future of media and want to study its impact on
+        our personalities and everyday interactions.
+      </p>
+    </section>
 
-        <section id="work-experience">
-            <h2> Experience </h2>
-             <ul class = "exp-flex">
-                 <li>The International Rescue Committee Connect 2 Success Volunteer</li>
-                 <li>FTI Consulting Intern</li>
-                 <li>Spelman-Stanford University Sloan Economics Research Assistant</li>
-                 <li>Warner Music - Rhino Entertainment Emerging Talent Associate</li>
-                 <li>SiriusXM + Pandora Sales Marketing Specialist</li>
-             </ul>
-        </section>
+    <section id="work-experience">
+      <h2>Experience</h2>
+      <ul class="exp-flex">
+        <li>The International Rescue Committee Connect 2 Success Volunteer</li>
+        <li>FTI Consulting Intern</li>
+        <li>Spelman-Stanford University Sloan Economics Research Assistant</li>
+        <li>Warner Music - Rhino Entertainment Emerging Talent Associate</li>
+        <li>SiriusXM + Pandora Sales Marketing Specialist</li>
+      </ul>
+    </section>
 
-        <section id="recent-projects">
-            <h2> Projects </h2>
-        </section>
+    <section id="recent-projects">
+      <h2>Projects</h2>
+      <ul></ul>
+    </section>
 
-        <section id="my-skills">
-            <h2> Skills </h2>
-            <ul></ul>
-        </section>
-        
-        <section id="contact-information" class="links">
-            <h2>Connect</h2>  
-                <div class ="contact-links">
-               <div><a href="lauren.godwin@outlook.com">Email</a> </div> 
-               <div><a href ="https://github.com/laurenbgod">GitHub</a></div>
-                <div><a href="https://www.linkedin.com/in/lauren-godwin/"> LinkedIn </a></div>
-                </div>
-        </section>
+    <section id="my-skills">
+      <h2>Skills</h2>
+      <ul></ul>
+    </section>
 
-        <section>
-            <h2>Leave a message</h2>     
-            <form name ="leave_message">
-                <input type = "text" name="usersName" id = "usersName" required />
-                <label for="usersName">Name</label><br>
-                <input type="email" name="usersEmail" id="usersEmail" required />
-                <label for="usersEmail">Email</label><br>
-                <textarea name="usersMessage" required></textarea>
-                <label for="usersMessage">Message</label><br>
-                <button type="submit">Submit</button>
-            </form>
-         </section>
+    <section id="contact-information" class="links">
+      <h2>Connect</h2>
+      <div class="contact-links">
+        <div><a href="lauren.godwin@outlook.com">Email</a></div>
+        <div><a href="https://github.com/laurenbgod">GitHub</a></div>
+        <div>
+          <a href="https://www.linkedin.com/in/lauren-godwin/"> LinkedIn </a>
+        </div>
+      </div>
+    </section>
 
-         <section id="messages">
-            <h2>Messages</h2>
-            <ul></ul>
-         </section>
+    <section>
+      <h2>Leave a message</h2>
+      <form name="leave_message">
+        <input type="text" name="usersName" id="usersName" required />
+        <label for="usersName">Name</label><br />
+        <input type="email" name="usersEmail" id="usersEmail" required />
+        <label for="usersEmail">Email</label><br />
+        <textarea name="usersMessage" required></textarea>
+        <label for="usersMessage">Message</label><br />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
 
-        <script src="js/index.js"></script>
+    <section id="messages">
+      <h2>Messages</h2>
+      <ul></ul>
+    </section>
 
-    </body>
+    <script src="js/index.js"></script>
+  </body>
 </html>
