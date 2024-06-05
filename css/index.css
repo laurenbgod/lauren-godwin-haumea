@@ -1,123 +1,173 @@
-body{
-    background-color: bisque;
-    color: #1f1001;
-    font-family: 'Courier New', Courier, monospace;
+* {
+  box-sizing: border-box;
 }
 
-section{
-    margin-top: 25px; 
-    margin-bottom: 5px;
-    padding-right: 5px;
-    padding-left: 5px; 
+body {
+  background-color: bisque;
+  color: #1f1001;
+  font-family: "Courier New", Courier, monospace;
 }
 
-.links{
-    text-align: left;
+section {
+  margin-top: 25px;
+  margin-bottom: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  max-width: 1080px;
+  margin: auto;
 }
 
-a{
-    font-style: italic;
+.links {
+  text-align: left;
 }
 
-h2{
-    font-size: 32px;
-    font-weight: bold;
-    color: darkred;
+a {
+  font-style: italic;
+  color: darkred;
 }
 
-.header{
-    background-color:#1f1001;
-    color: bisque;
-    padding: 25px 50px;
-    text-align: center;
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: darkred;
 }
 
-img{
-    padding: 1px 175px;
-    align-items: center;
+.header {
+  color: bisque;
+  padding: 25px 50px;
+  text-align: center;
+  border-bottom: 10px darkred;
+  background-color: darkred;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 50%;
+  max-width: 520px;
+  min-width: 320px;
+}
+
+.nav-flex {
+  display: flex;
+  flex-basis: auto;
+  flex-direction: row;
+  /*padding: 5px 150px 5px 75px */
+  /* flex-wrap: wrap; */
+  justify-content: space-evenly;
+  width: 100%;
+  border: 10px solid brown;
+  background-color: bisque;
+  color: bisque;
+  align-items: stretch;
+  max-width: 1080px;
+  margin: auto;
+  /* grid-template-rows: repeat(3, 1fr); */
 }
 
 ul {
-    display:flex;
-    flex-direction:column;
-    flex-wrap:wrap;
-    justify-content:space-between;
-    width:500px;; 
-    style{
-        background-color: lightgray;
-        color: black;
-        text-align: center;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  color: black;
+  text-align: center;
+  list-style-type: none;
 }
 
-.contact-links{
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:space-between;
-    width:500px;; 
-    style{
-        background: color #1f1001;;
-        color: bisque;
-        text-align: center;
-    }
+#skills ul {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 32px;
 }
 
-#nav-flex{
-    display:flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    justify-content:space-between;
-    border: .5px solid #1f1001;
-    background-color: bisque;
-    grid-template-rows: repeat(3, 1fr);
+li {
+  padding: 8px;
+  border-radius: 8px;
+  max-width: 100%;
+  border: 1px solid darkred;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+.contact-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 500px;
+  background: color #1f1001;
+  color: bisque;
+  text-align: center;
 }
 
-
+footer {
+  margin: auto;
+  max-width: 1080px;
+}
 
 /* Mobile Phone */
 
-@media screen and (max-width:500px){
-    h2{
-        font-size: 18px;
-        font-weight: normal;
-    }
+@media screen and (max-width: 500px) {
+  h2 {
+    font-size: 18px;
+  }
 
-    .main-header{
-        padding: 10px 20px;
-        text-align: left;
-    }
+  .main-header {
+    padding: 10px 20px;
+    text-align: left;
+  }
 
-    img{
-        object-fit: contain;
-    }
+  img {
+    object-fit: contain;
+  }
 
-    ul{
-        max-width: 75%;
-        background-color: dimgray;
-    }
+  skills ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  li {
+    background-color: darkred;
+    color: bisque;
+  }
 }
-
 
 /* Medium Size Screen */
 
-@media screen and (min-width:1280px){
-    h2{
-        font-size: 32px;
-        font-weight: normal;
-    }
+@media screen and (min-width: 1280px) {
+  h2 {
+    font-size: 32px;
+  }
 
-    .main-header{
-        padding: 25px 50px;
-        text-align: left;
-    }
+  .main-header {
+    padding: 25px 50px;
+    text-align: left;
+  }
 
-    img{
-        object-fit: contain;
-    }
+  .nav-flex {
+    font-size: 16px;
+    font-weight: bold;
+  }
 
-    ul{
-        max-width: 60%;
-        background-color: plum;
-    }
+  img {
+    object-fit: contain;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    max-width: 100%;
+    font-size: 16px;
+  }
 }
